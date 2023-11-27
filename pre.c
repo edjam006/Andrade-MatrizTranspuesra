@@ -20,14 +20,16 @@ int main(int argc, char const *argv[])
         printf("\n"); 
     }
     int transpuesta [b][a];
-    
-    for(int j = 0; j < a; j++) {
-        for(int i = 0; i < b; i++) {
-            transpuesta[j][i]= matriz[i][j];
+    printf("\n"); 
+    printf("La matriz transpuesta es: \n"); 
+    for (int i = 0; i < b; i++) {
+        for (int j = 0; j < a; j++) {
+            transpuesta[i][j] = matriz[j][i];
+            printf("%d\t", transpuesta[i][j]);
         }
-    
+        printf("\n");
     }
-    
+   
     
     return 0;
 }
