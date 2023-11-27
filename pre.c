@@ -12,16 +12,21 @@ int main(int argc, char const *argv[])
     printf("Ingrese el numero de columnas de la matriz\n");
     scanf("%d", &b);
     int matriz[a][b];
-
-    for (int i = 0; i < a; i++)
-    {
-        for (int j = 0; j < b; j++)
-        {
-            matriz[i][j]= rand() % 101;
+    for(int i = 0; i < a; i++) {
+        for(int j = 0; j < b; j++) {
+            matriz[i][j] = rand() % 101; 
+            printf("%d\t", matriz[i][j]); 
+        }
+        printf("\n"); 
+    }
+    int transpuesta [b][a];
+    for(int i = 0; i < a; i++) {
+        for(int j = 0; j < b; j++) {
+            
         }
         
     }
-    printf("%d", matriz[a][b]);
+    
     
     return 0;
 }
